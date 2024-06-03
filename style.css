@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  height: 100hv;
+  margin: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 420px;
+}
+
+.card {
+  width: 85px;
+  height: 85px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.1) rotateY(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
+.matched {
+  pointer-events: none;
+  background-color: #b3ffb3;
+}
+
+.message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.score {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.timer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+}
+
+.score {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.timer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+}
