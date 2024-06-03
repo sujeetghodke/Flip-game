@@ -8,7 +8,7 @@ const cards = [...fruits, ...fruits];
 let flippedCards = [];
 let matches = 0;
 let score = 0;
-let timer = 30;
+let timer = 40;
 let timeInterval;
 let comparing = false;
 
@@ -62,6 +62,23 @@ function handleCardClick() {
       flippedCards = [];
       comparing = false;
     }, 1000);
+  }
+}
+
+function updateTimer() {
+  const seconds = timer % 60;
+  timerDisplay.innerHTML = `Time Left: ${seconds}s`;
+  timer--;
+
+  // if (timer < 9) {
+  //   //if timer is less than 9
+  //   let addZero = timerDisplay.textContent;
+  //   timerDisplay.textContent = "0" + addZero; //add a 0 before time value
+  // }
+  if (timer < 0) {
+    //if timer is less than 0
+    clearInterval(timeInterval); //clear counter
+    // timeText.textContent = "Time Off"; //change the time text to time off
   }
 }
 
